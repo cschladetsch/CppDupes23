@@ -1,17 +1,15 @@
 #!/bin/bash
+set -e  # Exit on error
 
-# Build the project
-#rm -rf build
+# Create and enter build directory
+mkdir -p build
+cd build
 
-mkdir -p build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
+# Configure and build
+cmake ..
 cmake --build .
 
-# Run all tests
-#ctest --output-on-failure
-test/fs2-test
+# Run tests (adjust path based on where tests are built)
+./test/fs2-test
 
-# Navigate back to root
-echo "Build and tests complete."
 cd ..
-
