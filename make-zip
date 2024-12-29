@@ -2,6 +2,6 @@
 
 rm -f code.zip
 
-zip code.zip CMakeLists.txt tests/* include/* src/* Readme.md b
+zip code.zip CMakeLists.txt test/* include/* src/* Readme.md b
 
 
