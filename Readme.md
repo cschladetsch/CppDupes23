@@ -2,7 +2,7 @@
 
 ## Overview
 
-`fsf` is a high-performance C++20 command-line tool designed to compare files across multiple directories. It provides flexible file comparison modes, performance measurement, and detailed reporting.
+`fsf` is a high-performance C++23 command-line tool designed to compare files across multiple directories. It provides flexible file comparison modes, performance measurement, and detailed reporting.
 
 ## Features
 
@@ -20,7 +20,7 @@
 
 ## Prerequisites
 
-- C++20 compatible compiler (GCC 10+)
+- C++23 compatible compiler (GCC 10+)
 - CMake 3.10+
 - OpenSSL development libraries
 

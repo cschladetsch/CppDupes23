@@ -8,6 +8,7 @@ target_link_libraries(${PROJECT_NAME}
     PRIVATE
     FileComparatorLib
     Boost::program_options
+    Boost::filesystem
 )
 
 target_include_directories(${PROJECT_NAME} 

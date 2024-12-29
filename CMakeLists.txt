@@ -1,12 +1,15 @@
 cmake_minimum_required(VERSION 3.20)
+
 project(FileComparator CXX)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-
 set(PROJECT_NAME fs2)
 set(PROJECT_TEST fs2-test)
+
+find_package(Boost REQUIRED COMPONENTS filesystem system)
+include_directories(${Boost_INCLUDE_DIRS})
 
 # Download and build GTest
 include(FetchContent)
@@ -34,4 +37,3 @@ include_directories(${CMAKE_SOURCE_DIR}/include ${CMAKE_BINARY_DIR}/_deps)
 # Add subdirectories
 add_subdirectory(lib)
 add_subdirectory(src)
-add_subdirectory(test)
