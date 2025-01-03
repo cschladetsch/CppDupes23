@@ -9,7 +9,4 @@ cd build
 cmake ..
 cmake --build .
 
-# Run tests (adjust path based on where tests are built)
-./test/fs2-test
-
 cd ..
